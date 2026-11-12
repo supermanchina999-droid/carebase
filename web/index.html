@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareBase - HIPAA-Compliant Play Therapy App Builder</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; min-height: 100vh; }
+        .hero { text-align: center; padding: 80px 20px 60px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+        .hero h1 { font-size: 2.75rem; font-weight: 700; margin-bottom: 16px; }
+        .hero p { font-size: 1.25rem; opacity: 0.9; max-width: 600px; margin: 0 auto 32px; }
+        .hero .cta { display: inline-block; padding: 14px 32px; background: white; color: #667eea; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 1.1rem; }
+        .hero .badge { display: inline-block; padding: 6px 14px; background: rgba(255,255,255,0.2); border-radius: 20px; font-size: 0.85rem; margin-bottom: 24px; }
+        .problem { max-width: 800px; margin: 0 auto; padding: 60px 20px; text-align: center; }
+        .problem h2 { font-size: 2rem; margin-bottom: 16px; }
+        .problem p { color: #666; font-size: 1.1rem; line-height: 1.6; }
+        .problem .highlight { background: #fff3cd; padding: 20px; border-radius: 12px; margin-top: 24px; border-left: 4px solid #ffc107; text-align: left; }
+        .features { max-width: 900px; margin: 0 auto; padding: 40px 20px 60px; }
+        .features h2 { text-align: center; font-size: 2rem; margin-bottom: 40px; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+        .feature { background: white; border: 1px solid #e0e0e0; border-radius: 12px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .feature h3 { font-size: 1.1rem; margin-bottom: 8px; color: #667eea; }
+        .feature p { color: #666; font-size: 0.95rem; line-height: 1.5; }
+        .feature .icon { font-size: 2rem; margin-bottom: 12px; }
+        .comparison { max-width: 800px; margin: 0 auto; padding: 40px 20px 60px; }
+        .comparison h2 { text-align: center; font-size: 2rem; margin-bottom: 24px; }
+        .comparison table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .comparison th, .comparison td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #e0e0e0; }
+        .comparison th { background: #f5f5f5; font-weight: 600; }
+        .comparison .check { color: #28a745; }
+        .comparison .cross { color: #dc3545; }
+        .pricing { max-width: 600px; margin: 0 auto; padding: 40px 20px 60px; text-align: center; }
+        .pricing h2 { font-size: 2rem; margin-bottom: 16px; }
+        .pricing .price { font-size: 3rem; font-weight: 700; color: #667eea; margin: 16px 0; }
+        .pricing .price span { font-size: 1rem; color: #808080; }
+        .pricing ul { list-style: none; text-align: left; max-width: 400px; margin: 24px auto; }
+        .pricing li { padding: 8px 0; border-bottom: 1px solid #e0e0e0; color: #666; }
+        .pricing li::before { content: "✓ "; color: #28a745; }
+        .footer { text-align: center; padding: 40px 20px; color: #808080; border-top: 1px solid #e0e0e0; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="badge">HIPAA-Compliant • Play Therapy Specific</div>
+        <h1>CareBase</h1>
+        <p>Document a play session in 2 minutes, not 15. HIPAA-compliant app builder for Play Therapists.</p>
+        <a href="#pricing" class="cta">Join Beta — 6 Months Free</a>
+    </div>
+    <div class="problem">
+        <h2>The Problem</h2>
+        <p>Play Therapists spend 15 minutes writing session notes after every 30-minute play session. That's 1-2 hours of documentation per day. And SimplePractice/TherapyNotes only have talk therapy note templates.</p>
+        <div class="highlight">
+            <strong>Play Therapists need to document:</strong><br>
+            • Which toys were used and how<br>
+            • Play behaviors observed (pretend play, aggressive play, withdrawn, etc.)<br>
+            • Emotional responses during the session<br>
+            • Developmental milestones reached<br>
+            • Parent-friendly progress reports
+        </div>
+    </div>
+    <div class="features">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature"><div class="icon">🎮</div><h3>Play Session Notes</h3><p>Select toys, behaviors, emotions, and milestones with one tap. AI generates structured notes in 2 minutes.</p></div>
+            <div class="feature"><div class="icon">📊</div><h3>Parent Report</h3><p>One-click generate parent-friendly progress reports.</p></div>
+            <div class="feature"><div class="icon">🧩</div><h3>Toy Inventory</h3><p>Track which toys are used most. Identify patterns in play behavior over time.</p></div>
+            <div class="feature"><div class="icon">📋</div><h3>Play Therapy Intake</h3><p>Developmental history, play preferences. Built for child clients.</p></div>
+            <div class="feature"><div class="icon">🔒</div><h3>HIPAA Compliant</h3><p>BAA included. Data in YOUR database. Zero-knowledge architecture.</p></div>
+            <div class="feature"><div class="icon">🏗️</div><h3>Custom App Builder</h3><p>Describe what your practice needs. AI builds it. No coding required.</p></div>
+        </div>
+    </div>
+    <div class="comparison">
+        <h2>SimplePractice vs CareBase</h2>
+        <table>
+            <tr><th>Feature</th><th>SimplePractice</th><th>CareBase</th></tr>
+            <tr><td>Play Session Notes</td><td class="cross">✗ Talk therapy only</td><td class="check">✓ Play-specific</td></tr>
+            <tr><td>Toy Tracking</td><td class="cross">✗</td><td class="check">✓</td></tr>
+            <tr><td>Developmental Milestones</td><td class="cross">✗</td><td class="check">✓</td></tr>
+            <tr><td>Parent Report</td><td class="cross">✗ Manual</td><td class="check">✓ One-click</td></tr>
+            <tr><td>Data Ownership</td><td class="cross">✗ Locked in</td><td class="check">✓ Your database</td></tr>
+            <tr><td>Price</td><td>$29-99/mo</td><td>$49/mo (flat)</td></tr>
+        </table>
+    </div>
+    <div class="pricing" id="pricing">
+        <h2>Pricing</h2>
+        <div class="price">$49 <span>/ month</span></div>
+        <ul>
+            <li>Unlimited play session notes</li>
+            <li>Play therapy intake forms</li>
+            <li>Parent report generation</li>
+            <li>Toy inventory tracking</li>
+            <li>HIPAA BAA included</li>
+            <li>Data in your own database</li>
+            <li>Custom app builder</li>
+        </ul>
+        <a href="#" class="cta" style="margin-top: 24px; background: #667eea; color: white;">Join Beta — 6 Months Free</a>
+    </div>
+    <div class="footer">
+        <p>CareBase — Built by a solo founder for Play Therapists</p>
+        <p style="margin-top: 8px; font-size: 0.85rem;">HIPAA-compliant. BAA included. Data in your own database.</p>
+    </div>
+</body>
+</html>
